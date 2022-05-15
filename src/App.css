@@ -9,7 +9,10 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+}
+
+.info {
+  text-align: left;
 }
 
 .board {
@@ -25,12 +28,22 @@
 }
 
 .mole {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 75px;
   height: 75px;
   border-radius: 50%;
   background-color: black;
+  overflow: hidden;
+}
+
+.hidden-mole {
+  display: none;
 }
 
 .mole-img {
-  object-fit: contain;
+  width: 55px;
+  object-fit: cover;
+  object-position: 0px 5px;
 }
